@@ -1,0 +1,8 @@
+[workspace]
+members = ["host", "guest", "lib"]
+resolver = "2"
+
+[workspace.dependencies]
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+zisk-sdk = { git = "https://github.com/0xPolygonHermez/zisk.git", tag = "v0.16.0" }
+ziskos = { git = "https://github.com/0xPolygonHermez/zisk.git", tag = "v0.16.0" }
